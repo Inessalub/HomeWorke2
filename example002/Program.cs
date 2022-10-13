@@ -6,11 +6,15 @@ int a = int.Parse(Console.ReadLine() ?? "0");
 Console.WriteLine("Введите число b");
 int b = int.Parse(Console.ReadLine() ?? "0");
 
-if(a == b*b) 
+if(a == b * b) 
 {
-    Console.WriteLine("Число является квадратом другого");
+    Console.WriteLine("Число a является квадратом числа b");
+}
+else if (b == a * a)
+{
+    Console.WriteLine("Число b является квадратом числа a");
 }
 else
 {
-    Console.WriteLine("Число не является квадратом другого");
+    Console.WriteLine ("Одно число не является квадратом другого");
 }
